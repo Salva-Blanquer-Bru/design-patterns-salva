@@ -5,6 +5,7 @@ import com.kreitek.editor.Command;
 import java.util.ArrayList;
 
 public class DeleteCommand implements Command {
+
     private final int lineNumber;
 
     public DeleteCommand(int lineNumber) {
@@ -15,4 +16,5 @@ public class DeleteCommand implements Command {
     public void execute(ArrayList<String> documentLines) {
         documentLines.remove(lineNumber);
     }
+
 }
